@@ -26,5 +26,5 @@ $mensagem .= "uf: ".$mensagem."\r\n";
 mail($para, $assunto, $mensagem);
 
 // Redireciona para a página de agradecimento
-header("Location: index.php");
+header("Location: cadastro.html");
 ?>
