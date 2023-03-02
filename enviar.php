@@ -1,18 +1,30 @@
 <?php
-$destinatario = "leotesteprojeto@gmail.com";
-$assunto = "Nova mensagem do formulário";
-$mensagem = "Nome: " . $_POST['nome'] . "\r\n";
-$mensagem .= "E-mail: " . $_POST['email'] . "\r\n";
-$mensagem .= "cep: " . $_POST['cep'] . "\r\n";
-$mensagem .= "rua: " . $_POST['rua'] . "\r\n";
-$mensagem .= "complemento: " . $_POST['complemento'] . "\r\n";
-$mensagem .= "cidade: " . $_POST['cidade'] . "\r\n";
-$mensagem .= "uf: " . $_POST['uf'] . "\r\n";
+// Recebe os dados do formulário
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$mensagem = $_POST['cep'];
+$mensagem = $_POST['rua'];
+$mensagem = $_POST['n'];
+$mensagem = $_POST['complemento'];
+$mensagem = $_POST['cidade'];
+$mensagem = $_POST['uf'];
+
+// Define os detalhes do e-mail
+$para = "leotesteprojeto@gmail.com";
+$assunto = "Nova mensagem do site";
+$mensagem = "Nome: ".$nome."\r\n";
+$mensagem .= "E-mail: ".$email."\r\n";
+$mensagem .= "CEP: ".$mensagem."\r\n";
+$mensagem .= "RUA: ".$mensagem."\r\n";
+$mensagem .= "Nº: ".$mensagem."\r\n";
+$mensagem .= "complemento: ".$mensagem."\r\n";
+$mensagem .= "cidade: ".$mensagem."\r\n";
+$mensagem .= "uf: ".$mensagem."\r\n";
 
 
-$headers = "From: leotesteprojeto@gmail.com\r\n";
-$headers .= "Reply-To: " . $_POST['email'] . "\r\n";
+// Envia o e-mail
+mail($para, $assunto, $mensagem);
 
-mail($destinatario, $assunto, $mensagem, $headers);
-header("Location: cadastro.html");
+// Redireciona para a página de agradecimento
+header("Location: index.php");
 ?>
