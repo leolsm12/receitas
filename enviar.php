@@ -1,5 +1,5 @@
 <?php
-$destinatario = "email@destinatario.com";
+$destinatario = "leotesteprojeto@gmail.com";
 $assunto = "Nova mensagem do formulário";
 $mensagem = "Nome: " . $_POST['nome'] . "\r\n";
 $mensagem .= "E-mail: " . $_POST['email'] . "\r\n";
@@ -14,5 +14,5 @@ $headers = "From: leotesteprojeto@gmail.com\r\n";
 $headers .= "Reply-To: " . $_POST['email'] . "\r\n";
 
 mail($destinatario, $assunto, $mensagem, $headers);
-echo "Mensagem enviada com sucesso.";
+header("Location: cadastro.html");
 ?>
