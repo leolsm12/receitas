@@ -15,4 +15,47 @@
 }
 .conteudo{
     margin-top: -70px;
+} 
+
+@media only screen and (max-width: 575px) {
+    .blockquote{
+      font-size: 19px; 
+      font-weight:bold; 
+    } 
+    .blockquote > h1{
+        font-size: 22px;  
+        font-weight:bold;
+    } 
+    .rounded {
+        width: 35px;
+        height: 35px;
+        margin-top:330px;
+        margin-bottom: 20px;
+        margin-left: 45px;
+
+    }
+
+   }
+
+@media only screen and (max-width: 393px) {
+    .blockquote{
+        font-size: 14px; 
+        font-weight:bold; 
+    } 
+    .blockquote > h1{
+        font-size: 22px;  
+        font-weight:bold;
+    } 
+    .rounded {
+        width: 35px;
+        height: 35px;
+        margin-top:330px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+
+    }
+
+
 }
+
+   
