@@ -30,10 +30,10 @@
   </header> 
   <main>
         <div class="cadastro">
-            <h1>Efetue seu Cadastro</h1>
+            <h1>Efetue seu Cadastro</h1> 
         </div>
         <div class="formularios">
-            <form id="form-contato" action="C:\xampp\htdocs\enviar.php" method="POST" >
+            <form id="form-contato" action="./enviar.php" method="POST" >
                 <div class="row mb-3">
                   <label for="nome" class="col-sm-1 col-form-label">Nome</label>
                   <div class="col-sm-6">
@@ -83,7 +83,7 @@
                       <input type="text" class="form-control" id="uf" name="uf">
                     </div>
                     <div class="col-auto botao">
-                        <button class="btn btn-secondary" type="submit" style="--bs-btn-padding-y: 3px; --bs-btn-padding-x: 80px; --bs-btn-font-size: 21px;" value="Enviar">
+                        <button id="botao" class="btn btn-secondary" type="submit"  value="Enviar">
                              Cadastrar 
                         </button>
                     </div>
