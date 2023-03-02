@@ -1,0 +1,35 @@
+body {
+    background-color:#ea967a;
+    margin: 0;
+    font-family:  sans-serif;
+   
+}
+header{
+    height: 60px;
+    background-color:#353a40 ;
+}
+main{
+    height: calc(100vh - 100px);
+    overflow-y: auto ;
+    
+     
+}
+footer{
+    height: 25px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+.rodape > p{
+    color: #fff;
+    font-weight:bold;
+    text-align: center;
+    
+    
+}
+
+.navbar-nav > a{
+    color: #fff;
+}
